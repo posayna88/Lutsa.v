@@ -1,0 +1,30 @@
+plugins { id 'com.android.application' }
+
+if (file('google-services.json').exists()) {
+    apply plugin: 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.lutsa.social'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.lutsa.social'
+        minSdk 26
+        targetSdk 35
+        versionCode 27
+        versionName '2.7.2'
+        buildConfigField 'String', 'BASE_URL', '"https://YOUR-LUTSA-DOMAIN.example/"'
+    }
+
+    buildFeatures { buildConfig true }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation platform('com.google.firebase:firebase-bom:34.19.0')
+    implementation 'com.google.firebase:firebase-messaging'
+}

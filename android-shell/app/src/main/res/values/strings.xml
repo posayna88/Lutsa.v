@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LUTSA Social</string>
+    <string name="notification_channel_name">LUTSA Notifications</string>
+    <string name="default_notification_channel_id">lutsa_general</string>
+    <string name="biometric_title">فتح LUTSA</string>
+    <string name="biometric_subtitle">تحقق من هويتك للمتابعة</string>
+    <string name="biometric_description">استخدم بصمة الإصبع أو طريقة المصادقة الحيوية المدعومة على الجهاز</string>
+    <string name="biometric_cancel">إلغاء</string>
+</resources>
