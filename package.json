@@ -1,0 +1,13 @@
+{
+  "name": "lutsa-social",
+  "version": "2.7.4",
+  "private": true,
+  "description": "LUTSA Social network - Node built-ins + Vanilla JS + JSON storage + WebRTC polling + PWA + Android FCM + performance + threaded comments + saved collections + Story views + direct share links + deep links + message reactions/replies + group/page composer UX",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check public/app.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

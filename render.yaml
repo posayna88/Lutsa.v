@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: lutsa-social
+    runtime: node
+    plan: free
+    buildCommand: node --check server.js && node --check public/app.js
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: SESSION_SECRET
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: STUN_URLS
+        value: stun:stun.l.google.com:19302,stun:stun1.l.google.com:19302
+      - key: TURN_URLS
+        sync: false
+      - key: TURN_USERNAME
+        sync: false
+      - key: TURN_CREDENTIAL
+        sync: false
+      - key: METERED_APP_NAME
+        sync: false
+      - key: METERED_TURN_API_KEY
+        sync: false
+      - key: METERED_REGION
+        value: global
+      - key: METERED_ICE_CACHE_MS
+        value: 1800000
+      - key: FCM_PROJECT_ID
+        sync: false
+      - key: FCM_CLIENT_EMAIL
+        sync: false
+      - key: FCM_PRIVATE_KEY_B64
+        sync: false
