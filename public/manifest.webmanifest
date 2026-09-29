@@ -1,0 +1,68 @@
+{
+  "id": "/",
+  "name": "LUTSA Social",
+  "short_name": "LUTSA",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#061b14",
+  "theme_color": "#c9a227",
+  "lang": "ar",
+  "dir": "rtl",
+  "description": "LUTSA Social network with Messenger, WebRTC calls, Stories, Reels, groups, pages and live streaming.",
+  "version": "2.7.3",
+  "icons": [
+    {
+      "src": "/assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Messenger",
+      "short_name": "Messenger",
+      "url": "/?page=messenger",
+      "icons": [
+        {
+          "src": "/assets/icon.svg",
+          "sizes": "any"
+        }
+      ]
+    },
+    {
+      "name": "المكالمات",
+      "short_name": "Calls",
+      "url": "/?page=calls",
+      "icons": [
+        {
+          "src": "/assets/icon.svg",
+          "sizes": "any"
+        }
+      ]
+    },
+    {
+      "name": "الملف الشخصي",
+      "short_name": "Profile",
+      "url": "/?page=profile",
+      "icons": [
+        {
+          "src": "/assets/icon.svg",
+          "sizes": "any"
+        }
+      ]
+    },
+    {
+      "name": "المحفوظات",
+      "short_name": "Saved",
+      "url": "/?page=saved",
+      "icons": [
+        {
+          "src": "/assets/icon.svg",
+          "sizes": "any"
+        }
+      ]
+    }
+  ]
+}
